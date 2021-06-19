@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Page</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+   <!--Animation-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   
+</head>
+<body>
+<!--Header-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <h1> <a href="index.html"> Photography</a></h1>
+            </div>
+
+            <div class="main-nav">
+              <ul class="nav-menu">
+                <li class="menu-item"><a class="menu-link" href="http://">Home</a></li>
+                <li class="menu-item"><a class="menu-link" href="http://">Shop</a></li>
+                <li class="menu-item"><a class="menu-link" href="http://">Features</a></li>
+                <li class="menu-item"><a class="menu-link" href="http://">About</a></li>
+                <li class="menu-item"><a class="menu-link" href="http://">Contact</a></li>
+                  
+            </ul>   
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="social">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-basket"></i>
+                <i class="fa fa-cog"></i>
+            </div> 
+            </div>  
+                    
+        </nav>
+    </header>
+<!--Header End-->
+
+<!--Container-->
+    <div class="container">
+        <!-- 1.Row-->
+        <div class="flex-box">
+            <!--1.Row LeftSide-->
+            <div class="content">
+                <h2>Welcome To Photography Store</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis temporibus deserunt cumque illum nisi suscipit
+                    aperiam pariatur totam laborum! Maxime, impedit fugit
+                    similique nihil ipsa ducimus minima optio repudiandae
+                    doloremque!<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ducimus error labore saepe?Maxime, impedit fugit
+                    similique nihil ipsa ducimus minima optio repudiandae
+                    doloremque!
+                </p>
+            </div>
+            <!--1.Row RightSide-->
+            <div class="image" data-aos="fade-left">
+                <img src="image/1.jpg" alt="Photo">
+            </div>
+        </div>
+
+        <!--2.Row-->
+        <div class="flex-box">
+            <!--2.Row LeftSide-->
+            <div class="image" data-aos="fade-right">
+                <img src="image/2.jpg" alt="Photo">
+            </div>
+            <!--2.Row RightSide-->
+            <div class="content">
+                <h2>Welcome To Photography Store</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis temporibus deserunt cumque illum nisi suscipit
+                    aperiam pariatur totam laborum! Maxime, impedit fugit
+                    similique nihil ipsa ducimus minima optio repudiandae
+                    doloremque!<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ducimus error labore saepe?Maxime, impedit fugit
+                    similique nihil ipsa ducimus minima optio repudiandae
+                    doloremque!
+                </p>
+                <button class="btn">Explore Now</button>
+            </div>
+
+        </div>
+
+        <!--3.Row-->
+        <div class="flex-box">
+            <!--3.Row LeftSide-->
+            <div class="content third">
+                <h2>Explore Now</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis temporibus deserunt cumque illum nisi suscipit
+                    aperiam pariatur totam laborum! Maxime, impedit fugit
+                    similique nihil ipsa ducimus minima optio repudiandae
+                    doloremque!<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ducimus error labore saepe?Maxime, impedit fugit
+                    similique nihil ipsa ducimus minima optio repudiandae
+                    doloremque!
+                </p>
+                <button class="continue">Continue</button>
+            </div>
+            <!--3.Row RightSide-->
+            <div class="image" data-aos="fade-left">
+                <img src="image/3.jpeg" alt="Photo">
+            </div>
+
+        </div>
+
+        <!--4.Row-->
+        <div class="flex-box">
+            <!--4.Row LeftSide-->
+            <div class="image" data-aos="fade-right">
+                <img src="image/4.jpg" alt="Photo">
+            </div>
+            <!--4.Row RightSide-->
+            <div class="content formpanel">
+                <form>
+                    <h2>Contact Us</h2>
+                    <input type="text" placeholder="subject">
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="message"></textarea>
+                    <button class="btn">Send &nbsp;
+                        <i class="fa fa-paper-plane-o"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+<!--Container End-->
+    <script src="navmenu.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

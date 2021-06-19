@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 20px;
+    color: #373f51;
+    overflow-x: hidden; 
+    font-family: Tahoma;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*Header*/
+.header{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 1rem 1.5rem;
+}
+.brand h1 a{
+    color: #42643e;
+    cursor: pointer;
+}
+.main-nav{
+    display: flex;
+}
+.nav-menu {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-item {   
+    margin-left: 1.2rem;
+}
+.menu-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #999;
+    transition: 2s ease; 
+    display: inline-block;
+}
+.menu-link:hover{
+    color: #42643e;
+}
+.social{
+    margin-left: 30px;
+    padding: 6px;
+}
+.social i{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #999;
+    transition: 2s ease; 
+}
+.social i:hover{
+    color: #42643e;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #42643e;
+}
+
+@media only screen and (max-width: 858px){
+    .nav-menu {
+        z-index: 10;
+        position: absolute;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .menu-item {
+        margin: 0.5rem 0;
+    }
+    .hamburger {
+        justify-content: flex-end;
+        display: block;
+        cursor: pointer;
+    }
+    .main-nav{
+        flex-direction: row-reverse;
+    }
+    .social{
+        margin-right: 2vmax;
+    }
+    
+    /* Inside the Media Query.*/
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+@media only screen and (max-width: 460px){
+    .social{
+        padding: 5px 0;
+        margin-right: 1vmax;
+    }
+}
+
+/*Header End*/
+.container{
+    padding-top: 15px;
+}
+.flex-box{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-box div{
+    width: 50%;
+    display: inline-block;
+    flex: 1 1 50%;
+}
+.flex-box div h2{
+    color: #373f51;
+    font-size: 3vw;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-family: tahoma;
+    text-transform: uppercase;
+}
+.flex-box div p{
+    font-size: 1.3vw;
+}
+.flex-box .content{
+    color: #333;
+    width: auto;
+    padding: 10%;
+    height: auto;
+}
+.flex-box .image img{
+    width: 100%;
+    height: 100%;
+}
+.flex-box .third h2{
+    font-size: 20px;
+}
+.flex-box .third button{
+    color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    background: transparent;
+}
+.flex-box .third button::after{
+    content: '\f178';
+    font-family: FontAwesome;
+    transform: translateX(7px);
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+.btn{
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:600;
+    letter-spacing: 1px;
+    background:#333;
+    padding: 15px;
+}
+.btn:hover{
+    color: #333;    
+    background: #fff;
+    transition: all 0.6s ease;
+}
+.flex-box .formpanel input,
+.flex-box .formpanel textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #d8dbe2;
+}
+.flex-box .formpanel textarea{
+    resize: none;
+    height:10rem;
+}
